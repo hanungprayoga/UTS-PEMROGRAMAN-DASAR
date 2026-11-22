@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-19T13:19:00+00:00",
+    "source_file": "data/sensor_input.csv",
+    "version": "1.0.0",
+    "raw_valid_rows": 6,
+    "duplicates_removed": 1,
+    "clean_records_count": 5,
+    "validation_issues_count": 2
+  },
+  "node_summary": {
+    "NODE-01": {
+      "node_id": "NODE-01",
+      "locations": ["Lab Jaringan"],
+      "reading_count": 3,
+      "avg_temperature_c": 25.2,
+      "min_temperature_c": 24.5,
+      "max_temperature_c": 26.0,
+      "avg_humidity_pct": 64.0,
+      "alert_counts": {
+        "NORMAL": 2,
+        "WARNING": 0,
+        "CRITICAL": 1
+      },
+      "highest_alert": "CRITICAL",
+      "has_alert_history": true
+    },
+    "NODE-02": {
+      "node_id": "NODE-02",
+      "locations": ["Ruang Server"],
+      "reading_count": 2,
+      "avg_temperature_c": 32.0,
+      "min_temperature_c": 27.2,
+      "max_temperature_c": 36.8,
+      "avg_humidity_pct": 46.25,
+      "alert_counts": {
+        "NORMAL": 1,
+        "WARNING": 0,
+        "CRITICAL": 1
+      },
+      "highest_alert": "CRITICAL",
+      "has_alert_history": true
+    },
+    "NODE-03": {
+      "node_id": "NODE-03",
+      "locations": ["Gudang Alat"],
+      "reading_count": 1,
+      "avg_temperature_c": 30.0,
+      "min_temperature_c": 30.0,
+      "max_temperature_c": 30.0,
+      "avg_humidity_pct": 61.2,
+      "alert_counts": {
+        "NORMAL": 0,
+        "WARNING": 1,
+        "CRITICAL": 0
+      },
+      "highest_alert": "WARNING",
+      "has_alert_history": true
+    }
+  },
+  "alerts": [
+    {
+      "timestamp": "2026-11-19T08:10:00+07:00",
+      "node_id": "NODE-02",
+      "location": "Ruang Server",
+      "temperature_c": 36.8,
+      "humidity_pct": 44.0,
+      "status": "ONLINE",
+      "alert_level": "CRITICAL"
+    },
+    {
+      "timestamp": "2026-11-19T08:10:00+07:00",
+      "node_id": "NODE-03",
+      "location": "Gudang Alat",
+      "temperature_c": 30.0,
+      "humidity_pct": 61.2,
+      "status": "ONLINE",
+      "alert_level": "WARNING"
+    },
+    {
+      "timestamp": "2026-11-19T08:15:00+07:00",
+      "node_id": "NODE-01",
+      "location": "Lab Jaringan",
+      "temperature_c": 25.1,
+      "humidity_pct": 89.5,
+      "status": "ONLINE",
+      "alert_level": "CRITICAL"
+    }
+  ],
+  "filtered_records": [
+    {
+      "timestamp": "2026-11-19T08:00:00+07:00",
+      "node_id": "NODE-01",
+      "location": "Lab Jaringan",
+      "temperature_c": 24.5,
+      "humidity_pct": 52.0,
+      "status": "ONLINE",
+      "alert_level": "NORMAL"
+    },
+    {
+      "timestamp": "2026-11-19T08:05:00+07:00",
+      "node_id": "NODE-02",
+      "location": "Ruang Server",
+      "temperature_c": 27.2,
+      "humidity_pct": 48.5,
+      "status": "ONLINE",
+      "alert_level": "NORMAL"
+    },
+    {
+      "timestamp": "2026-11-19T08:10:00+07:00",
+      "node_id": "NODE-02",
+      "location": "Ruang Server",
+      "temperature_c": 36.8,
+      "humidity_pct": 44.0,
+      "status": "ONLINE",
+      "alert_level": "CRITICAL"
+    },
+    {
+      "timestamp": "2026-11-19T08:10:00+07:00",
+      "node_id": "NODE-03",
+      "location": "Gudang Alat",
+      "temperature_c": 30.0,
+      "humidity_pct": 61.2,
+      "status": "ONLINE",
+      "alert_level": "WARNING"
+    },
+    {
+      "timestamp": "2026-11-19T08:15:00+07:00",
+      "node_id": "NODE-01",
+      "location": "Lab Jaringan",
+      "temperature_c": 25.1,
+      "humidity_pct": 89.5,
+      "status": "ONLINE",
+      "alert_level": "CRITICAL"
+    },
+    {
+      "timestamp": "2026-11-19T08:25:00+07:00",
+      "node_id": "NODE-01",
+      "location": "Lab Jaringan",
+      "temperature_c": 26.0,
+      "humidity_pct": 50.5,
+      "status": "ONLINE",
+      "alert_level": "NORMAL"
+    }
+  ],
+  "validation_issues": [
+    "Baris 7 (NODE-03): nilai suhu atau kelembapan bukan angka valid.",
+    "Baris 8 (NODE-04): kelembapan 150.0% di luar rentang valid (0..100%)."
+  ]
+}
